@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx"
-import About from "./pages/About/About.jsx"
+import API from './pages/API/API.jsx'
 
 import Navbar from "./components/Navbar/Navbar.jsx"
-import Header from "./components/Header/Header.jsx"
 function App() {
   return (
     <>
@@ -11,7 +10,7 @@ function App() {
       <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/API" element={<API />} />
         </Routes>
       </BrowserRouter>
     </>
