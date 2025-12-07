@@ -1,0 +1,25 @@
+// ------------------------------------------------------
+// 1. Imports
+// ------------------------------------------------------
+
+// Tools
+@use "./utils/vars" as v;
+@use "./utils/mixins" as m;
+
+// Base styles
+@use "./base/reset";
+@use "./base/typo";
+
+// ------------------------------------------------------
+// 2. Base
+// ------------------------------------------------------
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: v.$ft-main;
+  background: v.$clr-bg;
+  color: v.$clr-txt;
+  font-size: v.$sp_16;
+}
+
