@@ -19,16 +19,19 @@ function API() {
     }
 
     return(
-      <div className="style.container">
-        <h1>Cute Dogs</h1>
-        <p>Hello! Click the button to see more cute dog pics!</p>
-        <img src={dog.message} alt=""/>
-        <br />
-        <br />
-
-        <button onClick={generateDog}>Click Me!</button>
-
-      </div>
+        <>
+            <div className={style.wrap}>    
+                <div className={style.container}>
+                    <h1>Cute Dogs</h1>
+                    <p>Hello! Click the button to see more cute dog pics!</p>
+                    <br />
+                    <br />
+                    <button onClick={generateDog}>Click Me!</button>
+                    <img src={dog.message} alt=""/>
+                    
+                </div>
+            </div>
+        </>
     )
 }
 
