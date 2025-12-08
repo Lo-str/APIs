@@ -19,15 +19,14 @@ function API() {
     }
 
     return(
-      <div>
-        <h1>Guess Breed</h1>
-        <p>Hello! Guess the breed!</p>
-        <img src={dog.message} />
+      <div className="style.container">
+        <h1>Cute Dogs</h1>
+        <p>Hello! Click the button to see more cute dog pics!</p>
+        <img src={dog.message} alt=""/>
         <br />
         <br />
-        <input type="text" placeholder="Type a breed...">
-        </input>
-        <button onClick={generateDog}>Generates dog</button>
+
+        <button onClick={generateDog}>Click Me!</button>
 
       </div>
     )

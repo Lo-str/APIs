@@ -1,3 +1,9 @@
 // Tools
 @use "../../style/utils/vars" as v;
 @use "../../style/utils/mixins" as m;
+
+.container {
+  border: 2px solid green;
+  @include m.flex(column);
+  width: 80vw;
+}

@@ -8,14 +8,13 @@
 
 // Base styles
 @use "./base/reset";
-@use "./base/typo";
 
 // ------------------------------------------------------
 // 2. Base
 // ------------------------------------------------------
 
 body {
-  margin: 0;
+  margin: 0 auto;
   min-height: 100vh;
   font-family: v.$ft-main;
   background: v.$clr-bg;
