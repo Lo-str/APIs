@@ -3,24 +3,25 @@
 @use "../../style/utils/mixins" as m;
 
 .container {
-  border: 5px solid green;
-  border-radius: 10px;
   padding: v.$sp_20;
   @include m.flex(column, center, flex-start);
   gap: v.$sp_20;
-  width: 80vw;
-  min-height: 100vh;
+  max-width: 960px;
+  width: 100%;
+  height: auto;
   margin-left: v.$sp_20;
 }
 
 img {
-  width: 80vw;
+  max-width: 50vw;
+  width: 100%;
   height: auto;
 }
 
 button {
   background-color: transparent;
   color: white;
+  border: 2px solid green;
   border-radius: 10px;
   @include m.clickable;
   @include m.hover;
