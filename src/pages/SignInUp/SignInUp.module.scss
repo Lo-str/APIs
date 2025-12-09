@@ -1,0 +1,39 @@
+// Tools
+@use "../../style/utils/vars" as v;
+@use "../../style/utils/mixins" as m;
+
+.container {
+    border: 2px solid green;
+    border-radius: v.$sp_50;
+    @include m.flex(column, space-around);
+    gap: v.$sp_20;
+    max-width: v.$sp_500;
+    width: 100%;
+    min-height: auto;
+
+    &__input {
+        @include m.clickable;
+
+    }
+
+    &__btn {
+    @include m.flex;
+    gap: v.$sp_10;
+    }
+}
+
+.submit {
+    color: inherit;
+    @include m.clickable;
+    @include m.hover;
+    background-color: white ;
+    border-radius: v.$sp-20;
+    padding: v.$sp-10;
+    width: v.$sp_50;
+    height: v.$sp_20;
+}
+
+.white {
+    background: green;
+    color: purple;
+}
