@@ -22,18 +22,26 @@
     }
 }
 
-.submit {
-    color: inherit;
+.sign-btn,
+.submit,
+.white {
     @include m.clickable;
     @include m.hover;
-    background-color: white ;
+    border: none;
+    font-size: v.$sp_16;
     border-radius: v.$sp-20;
-    padding: v.$sp-10;
-    width: v.$sp_50;
-    height: v.$sp_20;
+    width: v.$sp_100;
+    height: v.$sp_50;
+    margin: 0 0 v.$sp_10 0;
+}
+
+.submit {
+    color: inherit;
+    background-color: v.$clr-1;
+
 }
 
 .white {
-    background: green;
-    color: purple;
+    background: v.$clr-txt;
+    color: v.$clr-bg;
 }

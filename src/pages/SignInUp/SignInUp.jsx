@@ -39,6 +39,7 @@ function SignInUp() {
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <br />
+                        <br />
                         <input
                             type="password"
                             placeholder="Choose a Password..."
@@ -54,6 +55,7 @@ function SignInUp() {
                             type="email"
                             placeholder="Email..."
                         />
+                        <br />
                         <br />
                         <input
                             type="password"
@@ -76,13 +78,12 @@ function SignInUp() {
             </button>
             <div className={style.container__btn}>
                 <button className={
-                    action === "Sign In" ? '${style.submit} ${style.white}'
-                        : style.submit} onClick={() => {
+                    action === "Sign In" ? style.white : style.submit} onClick={() => {
                     setAction("Sign In")
                 }}>
                     Sign In
                 </button>
-                <button className={action === "Sign Up" ? '${style.submit} ${style.white}' : style.submit} onClick={() => {
+                <button className={action === "Sign Up" ? style.white : style.submit} onClick={() => {
                     setAction("Sign Up")
                 }}>
                     Sign Up
