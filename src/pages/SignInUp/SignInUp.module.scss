@@ -19,10 +19,11 @@
     &__btn {
     @include m.flex;
     gap: v.$sp_10;
+    margin-bottom: v.$sp_20;
     }
 }
 
-.sign-btn,
+.sign,
 .submit,
 .white {
     @include m.clickable;
@@ -35,6 +36,7 @@
     margin: 0 0 v.$sp_10 0;
 }
 
+.sign,
 .submit {
     color: inherit;
     background-color: v.$clr-1;

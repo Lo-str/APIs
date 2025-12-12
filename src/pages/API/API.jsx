@@ -24,7 +24,7 @@ function API() {
                 <div className={style.container}>
                     <h1>Cute Dogs</h1>
                     <p>Hello! Click the button to see more cute dog pics!</p>
-                    <button className={style.btn} classonClick={generateDog}>Click Me!</button>
+                    <button className={style.btn} onClick={generateDog}>Click Me!</button>
                     <img src={dog.message} alt=""/>
 
                 </div>
